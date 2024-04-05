@@ -1,15 +1,9 @@
-# Diagrams
+# Mermaid Diagrams
 
-Various diagrams that I'd like to keep around for easy reference and re-use.
+This README dynamically displays Mermaid diagrams found in the .mmd files within this directory.
 
-## DrawIO (diagrams.net)
-
-XML-based file format, simple JPEG/PNG/SVG/PDF export
-
-## Mermaid
-
-Text-based diagram syntax that enables embedded diagrams to render alongside their surrounding document, such as the below diagram which is a text box:
-
+## Diagram: mermaid/gitops-basic
+```mermaid
 ```mermaid
 graph TD
     A[Git Repository] -->|Code commit| B[CI Pipeline]
@@ -35,5 +29,7 @@ graph TD
     class E,F env;
     class G monitoring;
     class H monitoring;
+```
+
 ```
 
