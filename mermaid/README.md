@@ -4,7 +4,6 @@ This README dynamically displays Mermaid diagrams found in the .mmd files within
 
 ## Diagram: mermaid/gitops-basic
 ```mermaid
-```mermaid
 graph TD
     A[Git Repository] -->|Code commit| B[CI Pipeline]
     B -->|Build & Test| C[Image Registry]
@@ -29,7 +28,6 @@ graph TD
     class E,F env;
     class G monitoring;
     class H monitoring;
-```
 
 ```
 
