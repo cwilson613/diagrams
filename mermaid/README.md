@@ -65,5 +65,19 @@ graph TB
     class H services;
     class I policy;
     class J telemetry;
+
+    %% Legend
+    L1[Legend:] --> L2[Cluster: EKS Cluster]
+    L1 --> L3[Istio: Istio Control Plane]
+    L1 --> L4[K8s: Kubernetes Nodes and Pods]
+    L1 --> L5[Sidecar: Envoy Sidecars]
+    L1 --> L6[Services: Kubernetes Services]
+    L1 --> L7[Policy: Access Control]
+    L1 --> L8[Telemetry: Telemetry Collection]
+
+    class L1 legend;
+    class L2,L3,L4,L5,L6,L7,L8 legend;
+
+    classDef legend fill:#fff,stroke:#333,stroke-width:0px, color:#333;
 ```
 
