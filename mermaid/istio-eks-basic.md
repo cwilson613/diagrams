@@ -1,3 +1,19 @@
+# Istio Service Mesh on EKS
+
+Explanation of the Diagram Components
+
+- EKS Cluster: The overall Kubernetes cluster managed by EKS.
+- Istio Control Plane: Manages Istio's operational logic, including traffic management, policies, and configuration.
+- Kubernetes Nodes: Physical or virtual machines that host Kubernetes pods.
+- Envoy Sidecars: Deployed alongside each service pod to manage network communication.
+- Pods: Contains one or more containers (including Envoy proxies when Istio is used).
+- Services: Kubernetes Services that abstract the logic of pod access.
+- Service Discovery: Component of Istio that handles the discovery of services within the mesh.
+- Ingress Gateway: Manages access to the services from external sources.
+- Access Control: Policies enforced by the sidecars for service-to-service communication.
+- Telemetry: Collection of metrics and logging data facilitated by the sidecars.
+
+```mermaid
 graph TB
     A[EKS Cluster] -->|Hosts| B[Istio Control Plane]
     A -->|Hosts| C[Kubernetes Nodes]
@@ -32,17 +48,4 @@ graph TB
     class H services;
     class I policy;
     class J telemetry;
-
-    %% Legend
-    L1[Legend:] --> L2[Cluster: EKS Cluster]
-    L1 --> L3[Istio: Istio Control Plane]
-    L1 --> L4[K8s: Kubernetes Nodes and Pods]
-    L1 --> L5[Sidecar: Envoy Sidecars]
-    L1 --> L6[Services: Kubernetes Services]
-    L1 --> L7[Policy: Access Control]
-    L1 --> L8[Telemetry: Telemetry Collection]
-
-    class L1 legend;
-    class L2,L3,L4,L5,L6,L7,L8 legend;
-
-    classDef legend fill:#fff,stroke:#333,stroke-width:0px, color:#333;
+```
