@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-04-05T12:00:00.000Z" agent="Mozilla/5.0" etag="x" version="16.0.2" type="device">
+    <diagram id="Integration Overview Diagram" name="Page-1">
+        <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="GitLab CI/CD" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f4c2c2;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="180" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="JFrog Artifactory" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ccccff;" vertex="1" parent="1">
+                    <mxGeometry x="230" y="50" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="EKS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ccffcc;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="180" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Fortify Scanner" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffcc;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="250" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Falco" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f9f7ed;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="300" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="KeyCloak" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcccc;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="400" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Services in EKS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="400" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <!-- Additional edges and labels can be defined here in a similar manner -->
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
